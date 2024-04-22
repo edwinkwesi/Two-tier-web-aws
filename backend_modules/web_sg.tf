@@ -2,7 +2,7 @@
 resource "aws_security_group" "sg" {
   name        = "main-sg"
   description = "for web traffic"
-  vpc_id      = aws_vpc.custom-vpc.id
+  vpc_id      = aws_vpc.my-vpc.id
 
   ingress {
     description = "HTTP access"
@@ -39,7 +39,7 @@ resource "aws_security_group" "sg" {
 resource "aws_security_group" "database_sg" {
   name        = "database_sg"
   description = "allow inbound traffic from ALB"
-  vpc_id      = aws_vpc.custom-vpc.id
+  vpc_id      = aws_vpc.my-vpc.id
 
  
   ingress {
@@ -64,7 +64,7 @@ resource "aws_security_group" "database_sg" {
 resource "aws_security_group" "webtier_sg" {
   name        = "webtier_sg"
   description = "allow inbound traffic"
-  vpc_id      = aws_vpc.custom-vpc.id
+  vpc_id      = aws_vpc.my-vpc.id
 
  
   ingress {

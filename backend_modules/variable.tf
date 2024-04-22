@@ -19,15 +19,15 @@ variable "ec2_instance_ami" {
 # #   default = "10.0.0.0/17"
 # }
 
-variable "az1" {
-  type    = string
-  default = "eu-west-2a"
-}
+# variable "az1" {
+#   # type    = string
+#   default = "eu-west-2"
+# }
 
-variable "az2" {
-  type    = string
-  default = "eu-west-2b"
-}
+# variable "az2" {
+#   # type    = string
+#   default = "eu-west-2"
+# }
 
 # variable "public_subnet1_cidr" {
 #   type    = string
